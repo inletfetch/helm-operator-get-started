@@ -42,12 +42,12 @@ spec:
 #            {{- if .Values.service.metricsPort }}
 #            - --port-metrics={{ .Values.service.metricsPort }}
 #            {{- end }}
-            {{- if .Values.service.grpcPort }}
-            - --grpc-port={{ .Values.service.grpcPort }}
-            {{- end }}
-            {{- if .Values.service.grpcService }}
-            - --grpc-service-name={{ .Values.service.grpcService }}
-            {{- end }}
+#            {{- if .Values.service.grpcPort }}
+#            - --grpc-port={{ .Values.service.grpcPort }}
+#            {{- end }}
+#            {{- if .Values.service.grpcService }}
+#            - --grpc-service-name={{ .Values.service.grpcService }}
+#            {{- end }}
             {{- range .Values.backends }}
             - --backend-url={{ . }}
             {{- end }}
