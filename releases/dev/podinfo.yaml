@@ -21,4 +21,4 @@ spec:
     hpa:
       enabled: false
     service:
-        type:LoadBalancer
+        type: LoadBalancer
