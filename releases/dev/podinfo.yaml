@@ -20,3 +20,5 @@ spec:
     replicaCount: 1
     hpa:
       enabled: false
+    service:
+        type:LoadBalancer
